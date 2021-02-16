@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lemonadestand;
+
+/**
+ *
+ * @author 2342040
+ */
+public class LemonadeStand {
+  
+
+    public static void main(String[] args) {
+        
+           
+        int numLemonade;
+        int numSnacks;
+        double cost;
+        double pay;
+        double change;
+        
+        numLemonade = UserInput.getInteger("How many glasses do you want?");
+        numSnacks = UserInput.getInteger("How many snacks do you want?");
+        //Calculate costs
+        
+        cost = numLemonade*1.25 + numSnacks*1.5;
+        System.out.println("Total cost is: " + cost);
+        // Calculate pay and change
+        pay = UserInput.getDouble("Enter pay");
+        change = pay - cost;
+        System.out.println("Your change is: " + change);
+        
+            
+    }
+    
+}
