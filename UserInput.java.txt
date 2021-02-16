@@ -49,8 +49,6 @@ public class UserInput {
          String s = JOptionPane.showInputDialog(null,text);
          double y = Double.valueOf(s);
          return(y);
-    }
-}//end of class
-    
-    
+     }
+  }
 }
